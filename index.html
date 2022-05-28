@@ -5,111 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, for myself, education, cv, resume" >
-    <meta name="description" content="Этот сайт предназначен для самоизучения HTML и CSS.
-    Тут я занимаюсь прокачкой своих навыков в верстке" >
+    <meta name="description" content="Этот сайт предназначен для самоизучения HTML и CSS." >
     <title>MYeducation</title>
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
+    <div class="container">
 
-    <header id="header">
-        <img src="pictures/yato.jpg" alt="Аватарка страницы" width="400">
+        <div class="logo">
+            <h1>MYeducation</h1>
+        </div>
 
-        <h1>Меня зовут Эрик</h1>
+        <div class="info">
+            <img src="pictures/yato.jpg" alt="Аватарка страницы" width="400" class="avatar">
 
-        <hr color="orange" width="600" size="3">
+            <div class="info-text">
 
-        <p> Я работаю в айти компании. 
-            <br><br> 
-            Сейчас начал изучать фронтенд, так как  <strong>хочу стать программистом.</strong>
-            <br>
-            Первое время было сложно выбрать язык , <em><strong>так как не понимал</strong></em> ,
-            что именно мне нравится, и какая у меня цель в программирование. 
-            <br><br>
-            Люблю <em> путешествовать, заниматься спортом, и видимо программированить </em>, <strong> но пока мне дается это сложно</strong> 
-        </p>
-    </header>
+                <p> Я работаю в айти компании. 
+                <br>
+                Первое время было сложно выбрать язык, так как не понимал ,
+                что именно мне нравится, и какая у меня цель в программирование. 
+                <br>
+                Люблю путешествовать, заниматься спортом, программированить
+                </p>
 
-    <hr>
+                <h3>Я в социальных сетях:</h3>
+                
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                |
+                <a href="https://web.telegram.org" target="_blank">Telegram</a>
+                |
+                <a href="https://vk.com" target="_blank">VK</a>
+            </div>
+        </div>
         
-    <table id="table">
-        <h2>Опыт работы</h2>
-
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Клининг</td>
-                <td>Дворник</td>
-                <td>2017</td>
-            </tr>
-            <tr>
-                <td>Отель</td>
-                <td>Официант</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <td>Айти</td>
-                <td>Айтишник</td>
-                <td>2021</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <section id="hobbies">
-        <p>
-        <h3>Мои хобби</h3>
-
-        <ol>
-            <li>Горные лыжи</li>
-            <li>Тренажерный зал</li>
-            <li>Программирование</li>
-            <li>Вейксерфинг</li>
-            <li>Чтение книг</li>
-        </ol>
-        </p>
-
-        <hr color="orange" width="600" size="3">
-    </section>
-
-    <nav id="social">
-        <p>
-            <h3>Тут мои соцсети:</h3>
-            
-            <a href="https://instagram.com" target="_blank">Inst</a>
-            <a href="https://telegram.web" target="_blank">Telegram</a>
-            <a href="https://vk.com" target="_blank">VK</a>
-        </p>
-    </nav>
-
-    <br>
-
-    <form id="form">
-        <h2>Связаться со мной</h2>
-
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите полное имя">
+        <div class="card">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Горные лыжи</li>
+                <li>Тренажерный зал</li>
+                <li>Программирование</li>
+                <li>Вейксерфинг</li>
+                <li>Чтение книг</li>
+            </ol>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите ваш email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="8" placeholder="Введите сообщение"></textarea>
+
+        <div class="card">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tbody">
+                    <tr>
+                        <td>Google cop</td>
+                        <td>data science</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Meta group</td>
+                        <td>back-end developer</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td>team-lead data science</td>
+                        <td>2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+        
+
+
+        <form class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="groupForm">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите полное имя">
+                </div>
+                <div class="groupForm">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите ваш email">
+                </div>
+            </div>
+            <div class="groupForm">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
             </div>
 
-            <button type="submit">Отправить сообщение</button>
-    </form>
-     
-
+                <button type="submit" class="btn" >Отправить сообщение</button>
+        </form>
+    </div>
 </body>
 </html>
